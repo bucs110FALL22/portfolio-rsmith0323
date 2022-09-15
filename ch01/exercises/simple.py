@@ -10,6 +10,9 @@ print(0 % 10)
 print(10 / 15)
 # 10/15 is a infinite decimal but when it is printed by the program it ends
 
-rate = float(input("What is the current exchage rate for the Euro to Dollar? "))
-rate = float(rate)
-amount = input(Please input the amount to exchange: ) 
+rate = float(input("What is the current exchage rate for the Euro to Dollars? "))
+amount = float(input("Please input the amount to exchange: $"))
+total = (amount/rate)
+print("$",total)
+result = (total - 3)
+print("$",result)
