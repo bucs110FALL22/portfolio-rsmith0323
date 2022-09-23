@@ -113,4 +113,4 @@ pygame.draw.polygon(window, "red", coords)
 pygame.display.flip()
 window.fill("black")
 
-#window.exitonclick()
+window.exitonclick()
