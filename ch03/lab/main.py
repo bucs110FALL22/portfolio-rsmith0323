@@ -1,8 +1,8 @@
 import turtle #1. import modules
 import random
-import time
 import pygame
 import math
+
 
 
 #Part A
@@ -57,7 +57,7 @@ for i in range(num_sides):
   points = (x,y)
   coords.append(points)
 
-pygame.time.wait(250)
+pygame.time.wait(300)
 pygame.draw.polygon(window, "red", coords)
 pygame.display.flip()
 window.fill("black")
@@ -74,7 +74,7 @@ for i in range(num_sides):
   points = (x,y)
   coords.append(points)
 
-pygame.time.wait(250)
+pygame.time.wait(300)
 pygame.draw.polygon(window, "red", coords)
 pygame.display.flip()
 window.fill("black")
@@ -91,7 +91,24 @@ for i in range(num_sides):
   points = (x,y)
   coords.append(points)
 
-pygame.time.wait(250)
+pygame.time.wait(300)
+pygame.draw.polygon(window, "red", coords)
+pygame.display.flip()
+window.fill("black")
+
+coords = []
+num_sides = 9
+side_length = 50
+offset = 100
+
+for i in range(num_sides):
+  theta = (2.0 * math.pi * (i)) / num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  points = (x,y)
+  coords.append(points)
+
+pygame.time.wait(300)
 pygame.draw.polygon(window, "red", coords)
 pygame.display.flip()
 window.fill("black")
@@ -108,7 +125,7 @@ for i in range(num_sides):
   points = (x,y)
   coords.append(points)
 
-pygame.time.wait(250)
+pygame.time.wait(300)
 pygame.draw.polygon(window, "red", coords)
 pygame.display.flip()
 window.fill("black")
