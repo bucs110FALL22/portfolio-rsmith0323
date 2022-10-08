@@ -96,4 +96,4 @@ if event in pygame.event.get():
 
 
 
-#window.exitonclick()
+window.exitonclick()
