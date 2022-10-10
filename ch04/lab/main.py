@@ -75,9 +75,6 @@ pygame.time.wait(2500)
 
 
 
-if event in pygame.event.get():
-  if event.type == pygame. MOUSEBUTTONDOWN:
-    if event.pos[0] < x / 2:
       
 
   
