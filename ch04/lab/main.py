@@ -133,10 +133,10 @@ Guess = True
 while Guess == True:
   for event in pygame.event.get():
     if event.type == pygame.MOUSEBUTTONDOWN:
-      if event.pos[0] < x/2:
+      if event.pos[0] < 200:
         playerchoice = "red"
         Guess = False
-      if event.pos[0] > x/2:
+      if event.pos[0] > 200:
         playerchoice = "blue"
         Guess = False
 print("You selected player", playerchoice)
