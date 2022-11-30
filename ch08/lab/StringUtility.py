@@ -5,7 +5,7 @@ class StringUtility:
 
   def __str__(self):
     '''returns the internal string itself unchanged'''
-    return str(self.string)
+    return (self.string)
 
   def vowels(self):
     '''Counts the number of vowels in the string as a string'''
