@@ -51,9 +51,9 @@ class StringUtility:
     for i in range(len(self.string)):
       char = self.string[i]
       if char.isupper():
-        string2 = string2 + chr((ord(letter) + num - 65) % 26 + 65)
-      elif letter.islower():
-        string2 = string2 + chr(((ord(letter))+ num - 97) % 26 + 97)
+        string2 = string2 + chr((ord(char) + num - 65) % 26 + 65)
+      elif char.islower():
+        string2 = string2 + chr(((ord(char))+ num - 97) % 26 + 97)
       else: 
         string2 = string2 + " "
     return string2
