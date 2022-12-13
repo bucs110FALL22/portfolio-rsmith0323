@@ -19,7 +19,7 @@ def main():
         print(f"{s}, got: {result}, expected: {expected_results[i]}")
         assert(result == expected_results[i])
         i += 1
-
+  
     print("=========== Testing vowels method ===========")
     expected_results = ["4", "3", "3", "many", "many", "0"]
     i = 0
